@@ -11,9 +11,13 @@
 
 // TODO Insert declarations
     // Pin declaration
-        #define LED_OUTPUT  TRISB0=0
-        #define LED_HIGH    RB0=1
-        #define LED_LOW     RB0=0
+        #define LED_OUTPUT      TRISB0=0
+        #define LED_HIGH        RB0=1
+        #define LED_LOW         RB0=0
+        #define LED_SetValue    RB0
+
+        #define Button_Input    TRISB1=1
+        #define Button_Read     RB1
     //
     // Values declaration
         #define true        1
@@ -24,5 +28,6 @@
 // TODO Insert declarations or function prototypes (right here) to leverage 
     void system_initializer () {
         LED_OUTPUT;
+        Button_Input;
     }
 //
